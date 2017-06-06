@@ -1,34 +1,8 @@
 # python
 <pre>
-echo "# python" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git remote add origin https://github.com/mazhou/python.git
-git push -u origin master
+	https://stackoverflow.com/questions/1448429/how-to-install-mysqldb-python-data-access-library-to-mysql-on-mac-os-x
 </pre>
 
-<pre>
-git remote add origin https://github.com/mazhou/python.git
-git push -u origin master
-</pre>
-
-
-<pre>
-vim computationalGraph.py
-chmod a+x computationalGraph.py
-python computationalGraph.py
-</pre>
-
-<pre>
-https://github.com/bazelbuild/bazel
-https://developer.nvidia.com/cuda-downloads
-https://pypi.python.org/pypi
-https://virtualenv.pypa.io/en/stable/
-export PATH=/Developer/NVIDIA/CUDA-8.0/bin${PATH:+:${PATH}}
-export DYLD_LIBRARY_PATH=/Developer/NVIDIA/CUDA-8.0/lib\
-${DYLD_LIBRARY_PATH:+:${DYLD_LIBRARY_PATH}}
-</pre>
 
 <pre>
 import module1[, module2[,... moduleN]
@@ -144,4 +118,36 @@ float(x) 转换成一个浮点数
 complex(x) 转换成复数    
 max(...) 求最大值    
 min(...) 求最小值  
+</pre>
+
+
+<pre>
+echo "# python" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/mazhou/python.git
+git push -u origin master
+</pre>
+
+<pre>
+git remote add origin https://github.com/mazhou/python.git
+git push -u origin master
+</pre>
+
+
+<pre>
+vim computationalGraph.py
+chmod a+x computationalGraph.py
+python computationalGraph.py
+</pre>
+
+<pre>
+https://github.com/bazelbuild/bazel
+https://developer.nvidia.com/cuda-downloads
+https://pypi.python.org/pypi
+https://virtualenv.pypa.io/en/stable/
+export PATH=/Developer/NVIDIA/CUDA-8.0/bin${PATH:+:${PATH}}
+export DYLD_LIBRARY_PATH=/Developer/NVIDIA/CUDA-8.0/lib\
+${DYLD_LIBRARY_PATH:+:${DYLD_LIBRARY_PATH}}
 </pre>

@@ -3,6 +3,10 @@
 	https://stackoverflow.com/questions/1448429/how-to-install-mysqldb-python-data-access-library-to-mysql-on-mac-os-x
 </pre>
 
+<pre>
+	2017-6-13
+	https://github.com/pbharrin/machinelearninginaction/blob/master/Ch02/kNN.py
+</pre>
 
 <pre>
 import module1[, module2[,... moduleN]

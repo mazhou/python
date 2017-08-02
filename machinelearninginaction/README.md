@@ -1,5 +1,11 @@
 # python
 <pre>
+	import feedparser
+	import numpy
+	import re
+	import setup
+</pre>
+<pre>
 	https://docs.scipy.org/doc/numpy/reference/arrays.indexing.html
 </pre>
 <pre>

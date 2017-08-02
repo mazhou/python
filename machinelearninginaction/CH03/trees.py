@@ -13,6 +13,7 @@ def createDataSet():
 
 def calcShannonEnt(dataSet):
     numEntries = len(dataSet)
+    #print("numEntries:",numEntries)
     labelCounts = {}
     for featVec in dataSet: #the the number of unique elements and their occurance
         currentLabel = featVec[-1]
@@ -53,7 +54,7 @@ def chooseBestFeatureToSplit(dataSet):
 
 def majorityCnt(classList):
     classCount={}
-    for vote in classList:
+    for vote in classList:        
         if vote not in classCount.keys(): classCount[vote] = 0
         classCount[vote] += 1
     sortedClassCount = sorted(classCount.iteritems(), key=operator.itemgetter(1), reverse=True)
@@ -61,19 +62,27 @@ def majorityCnt(classList):
 
 def createTree(dataSet,labels):
     classList = [example[-1] for example in dataSet]
+    # print('dataSet',dataSet,"classList",classList,'labels',labels)
     if classList.count(classList[0]) == len(classList): 
+        # print("classList.count(classList[0])",classList.count(classList[0]))
         return classList[0]#stop splitting when all of the classes are equal
     if len(dataSet[0]) == 1: #stop splitting when there are no more features in dataSet
         return majorityCnt(classList)
     bestFeat = chooseBestFeatureToSplit(dataSet)
+    # print('bestFeat',bestFeat)
     bestFeatLabel = labels[bestFeat]
+    # print('bestFeatLabel',bestFeatLabel)
     myTree = {bestFeatLabel:{}}
     del(labels[bestFeat])
+    # print('del labels',labels)
     featValues = [example[bestFeat] for example in dataSet]
     uniqueVals = set(featValues)
+    # print('uniqueVals',uniqueVals)
     for value in uniqueVals:
         subLabels = labels[:]       #copy all of labels, so trees don't mess up existing labels
+        # print('subLabels', subLabels)
         myTree[bestFeatLabel][value] = createTree(splitDataSet(dataSet, bestFeat, value),subLabels)
+    # print('myTree',myTree);
     return myTree                            
     
 def classify(inputTree,featLabels,testVec):
@@ -97,3 +106,9 @@ def grabTree(filename):
     import pickle
     fr = open(filename)
     return pickle.load(fr)
+
+myDat,labels = createDataSet()
+calcShannonEnt(myDat)
+#splitDataSet(myDat,0,1)
+#chooseBestFeatureToSplit(myDat)
+createTree(myDat,labels)

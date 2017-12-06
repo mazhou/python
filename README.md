@@ -169,3 +169,27 @@ sudo easy_install pip
 sudo -H 这个是mac安装权限用
 
 </pre>
+
+<pre>
+sudo pip install virtualenv
+virtualenv ENV
+virtualenv --version
+native
+virtualenv --system-site-packages targetDirectory
+cd workspace/
+mkdir python
+cd python
+virtualenv --system-site-packages targetDirectory
+virtualenv --system-site-packages -p python3 targetDirectory
+
+
+virtualenv --system-site-packages targetDirectory
+virtualenv --system-site-packages -p python3 targetDirectory
+
+source /Users/mazhou/workspace/python/targetDirectory/bin/activate
+source /Users/mazhou/workspace/python/targetDirectory/bin/activate.csh
+csh ~/targetDirectory/bin/activate.csh
+
+sudo -H easy_install -U pip
+csh ~/targetDirectory/bin/activate.csh
+  </pre>

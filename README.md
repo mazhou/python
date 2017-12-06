@@ -155,3 +155,17 @@ export PATH=/Developer/NVIDIA/CUDA-8.0/bin${PATH:+:${PATH}}
 export DYLD_LIBRARY_PATH=/Developer/NVIDIA/CUDA-8.0/lib\
 ${DYLD_LIBRARY_PATH:+:${DYLD_LIBRARY_PATH}}
 </pre>
+
+<pre>
+安装tensorflow
+报错说库
+File "/Library/Python/2.7/site-packages/pip-9.0.1-py2.7.egg/pip/req/req_install.py", line 82, in __init__
+    req = Requirement(req)
+安装下面修复
+sudo pip install awscli --upgrade --ignore-installed six
+sudo -H pip3 install tensorflow
+其他参考https://www.tensorflow.org/install/install_mac
+sudo easy_install pip
+sudo -H 这个是mac安装权限用
+
+</pre>

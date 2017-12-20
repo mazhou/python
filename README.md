@@ -192,4 +192,7 @@ csh ~/targetDirectory/bin/activate.csh
 
 sudo -H easy_install -U pip
 csh ~/targetDirectory/bin/activate.csh
+
+install matplotlib
+python -mpip install -U matplotlib
   </pre>

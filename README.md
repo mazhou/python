@@ -195,4 +195,11 @@ csh ~/targetDirectory/bin/activate.csh
 
 install matplotlib
 python -mpip install -U matplotlib
+
+brew install libxml2 
+brew install libxslt 
+brew link libxml2 --force 
+brew link libxslt --force 
+
+pip install lxml
   </pre>

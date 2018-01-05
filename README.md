@@ -202,4 +202,6 @@ brew link libxml2 --force
 brew link libxslt --force 
 
 pip install lxml
+
+sudo -H pip install --upgrade setuptools --user -U
   </pre>

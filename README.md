@@ -9,6 +9,8 @@
 </pre>
 
 <pre>
+	source /Users/mazhou/workspace/python/targetDirectory/bin/activate
+	
 	from numpy import *
 	from numpy.random import rand
 	

@@ -9,6 +9,19 @@
 </pre>
 
 <pre>
+	from numpy import *
+	from numpy.random import rand
+	
+	from matplotlib.pyplot import *
+	import matplotlib.pyplot as plt
+
+	from mpl_toolkits.mplot3d import Axes3D
+	from matplotlib import cm
+
+	from scipy.misc import lena
+</pre>
+
+<pre>
 import module1[, module2[,... moduleN]
 from modname import name1[, name2[, ... nameN]]
 from fib import fibonacci

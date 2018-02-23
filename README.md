@@ -168,3 +168,53 @@ export PATH=/Developer/NVIDIA/CUDA-8.0/bin${PATH:+:${PATH}}
 export DYLD_LIBRARY_PATH=/Developer/NVIDIA/CUDA-8.0/lib\
 ${DYLD_LIBRARY_PATH:+:${DYLD_LIBRARY_PATH}}
 </pre>
+
+<pre>
+安装tensorflow
+报错说库
+File "/Library/Python/2.7/site-packages/pip-9.0.1-py2.7.egg/pip/req/req_install.py", line 82, in __init__
+    req = Requirement(req)
+安装下面修复
+sudo pip install awscli --upgrade --ignore-installed six
+sudo -H pip3 install tensorflow
+其他参考https://www.tensorflow.org/install/install_mac
+sudo easy_install pip
+sudo -H 这个是mac安装权限用
+
+</pre>
+
+<pre>
+sudo pip install virtualenv
+virtualenv ENV
+virtualenv --version
+native
+virtualenv --system-site-packages targetDirectory
+cd workspace/
+mkdir python
+cd python
+virtualenv --system-site-packages targetDirectory
+virtualenv --system-site-packages -p python3 targetDirectory
+
+
+virtualenv --system-site-packages targetDirectory
+virtualenv --system-site-packages -p python3 targetDirectory
+
+source /Users/mazhou/workspace/python/targetDirectory/bin/activate
+source /Users/mazhou/workspace/python/targetDirectory/bin/activate.csh
+csh ~/targetDirectory/bin/activate.csh
+
+sudo -H easy_install -U pip
+csh ~/targetDirectory/bin/activate.csh
+
+install matplotlib
+python -mpip install -U matplotlib
+
+brew install libxml2 
+brew install libxslt 
+brew link libxml2 --force 
+brew link libxslt --force 
+
+pip install lxml
+
+sudo -H pip install --upgrade setuptools --user -U
+  </pre>
